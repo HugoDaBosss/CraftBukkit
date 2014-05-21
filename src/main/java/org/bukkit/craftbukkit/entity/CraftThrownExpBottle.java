@@ -6,6 +6,7 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.entity.ThrownExpBottle;
 
 public class CraftThrownExpBottle extends CraftProjectile implements ThrownExpBottle {
+    
     public CraftThrownExpBottle(CraftServer server, EntityThrownExpBottle entity) {
         super(server, entity);
     }
