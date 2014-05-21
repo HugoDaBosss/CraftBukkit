@@ -21,9 +21,8 @@ public class CraftPotionBrewer implements PotionBrewer {
             return cache.get(damage);
 
         List<?> mcEffects = net.minecraft.server.PotionBrewer.getEffects(damage, false);
-        List<PotionEffect> effects = new ArrayList<PotionEffect>();
         if (mcEffects == null)
-            return effects;
+            return new ArrayList<PotionEffect>();
 
         for (Object raw : mcEffects) {
             if (raw == null || !(raw instanceof MobEffect))
