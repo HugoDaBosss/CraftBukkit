@@ -15,6 +15,7 @@ import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionEffect;
 
 public class CraftThrownPotion extends CraftProjectile implements ThrownPotion {
+    
     public CraftThrownPotion(CraftServer server, EntityPotion entity) {
         super(server, entity);
     }
